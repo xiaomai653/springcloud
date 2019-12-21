@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaomai653/springcloud.git
+          searchPaths: config
+          username: XiaoMai653
+          password: 520maijunfeng
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZonr: http://localhost:8761/eureka/
