@@ -1,0 +1,8 @@
+server:
+  port: 8070
+foo: foo version 1
+spring:
+  cloud:
+    config:
+      server:
+        boostrap: true
